@@ -3,5 +3,9 @@ container:
   properties: {html: "<center style=\"font-style:italic; color:#888; margin: 3em;\"\
       >\n  (Insert your custom HTML here)\n</center>\n<div anvil-slot=\"default\"\
       ></div>"}
-components: []
+components:
+- type: RepeatingPanel
+  properties: {item_template: Home.ItemTemplate1}
+  name: repeating_panel_1
+  layout_properties: {slot: default}
 is_package: true
