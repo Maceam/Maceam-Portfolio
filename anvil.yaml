@@ -1,6 +1,20 @@
 allow_embedding: false
 package_name: Custom_HTML_1
+db_schema:
+  images:
+    client: none
+    server: full
+    columns:
+    - name: image_uploads
+      admin_ui: {order: 0, width: 200}
+      type: media
+    title: Table 1
+startup: {type: form, module: Home}
 name: Custom HTML 1
+startup_form: null
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
