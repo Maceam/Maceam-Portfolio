@@ -1,5 +1,20 @@
-allow_embedding: false
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Home}
 package_name: Custom_HTML_1
+allow_embedding: false
+name: Custom HTML 1
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+startup_form: null
+native_deps: {head_html: '<link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap"
+    rel="stylesheet"> '}
 db_schema:
   images:
     client: none
@@ -9,12 +24,3 @@ db_schema:
       admin_ui: {order: 0, width: 200}
       type: media
     title: Table 1
-startup: {type: form, module: Home}
-name: Custom HTML 1
-startup_form: null
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
