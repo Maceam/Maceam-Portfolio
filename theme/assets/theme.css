@@ -1,3 +1,6 @@
-self.home{
-  font-size: 124px;
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  line-height: 1.4286;
+  background-color: #fafafa;
 }
