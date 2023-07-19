@@ -1,8 +1,8 @@
-from ._anvil_designer import head_1Template
+from ._anvil_designer import head_2Template
 from anvil import *
 import anvil.server
 
-class head_1(head_1Template):
+class head_2(head_2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -10,15 +10,15 @@ class head_1(head_1Template):
   def home_click(self, **event_args):
     """This method is called when the link is clicked"""
     pass
-    
+
   def portfolio_click(self, **event_args):
     """This method is called when the link is clicked"""
     pass
-    
+
   def about_click(self, **event_args):
     """This method is called when the link is clicked"""
     pass
-    
+
   def contact_click(self, **event_args):
     """This method is called when the link is clicked"""
     pass
@@ -29,6 +29,3 @@ class head_1(head_1Template):
   def Contact_click(self, **event_args):
     """This method is called when the link is clicked"""
     pass
-
-    
-

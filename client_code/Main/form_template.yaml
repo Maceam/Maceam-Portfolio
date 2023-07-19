@@ -3,10 +3,6 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: form:head_1
-  properties: {}
-  name: custom_1
-  layout_properties: {slot: default}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Undergoing a Revamp, back soon!', font_size: null, font: '', spacing_above: small,
@@ -14,3 +10,8 @@ components:
     underline: false, icon: ''}
   name: label_1
   layout_properties: {slot: default}
+- type: form:head_2
+  properties: {}
+  name: header_2
+  layout_properties: {slot: default}
+item_type: {table_id: null}
