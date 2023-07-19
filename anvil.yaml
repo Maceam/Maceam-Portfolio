@@ -2,7 +2,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: Main}
+startup: {type: form, module: About}
 package_name: Custom_HTML_1
 allow_embedding: false
 name: Custom HTML 1
@@ -24,3 +24,11 @@ db_schema:
     - name: exemplar
       admin_ui: {order: 0, width: 200}
       type: media
+  personal_brand:
+    client: none
+    server: full
+    columns:
+    - name: Column0
+      admin_ui: {order: 0, width: 200}
+      type: media
+    title: personal-brand
