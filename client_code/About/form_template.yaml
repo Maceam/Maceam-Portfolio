@@ -9,8 +9,7 @@ components:
 - type: Image
   properties: {role: null, vertical_align: center, height: 200, tooltip: '', border: '',
     foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-    source: app_tables.personal_brand.(animation_m_5.gif), spacing_below: small, background: '',
-    horizontal_align: center}
+    source: '', spacing_below: small, background: '', horizontal_align: center}
   name: image_1
   layout_properties: {grid_position: 'YWXABT,KONZNN'}
   data_bindings: []
