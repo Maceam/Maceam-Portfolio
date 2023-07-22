@@ -1,5 +1,8 @@
 roles:
-- name: header_on
+- name: HeaderSelected
   components: [Link]
-- name: header_off
+  display_in_toolbox: false
+- name: HeaderDefault
+  components: [Link]
+- name: HeaderHover
   components: [Link]

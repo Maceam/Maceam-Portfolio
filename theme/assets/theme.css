@@ -1,4 +1,8 @@
-.anvil-role-header_off
-{
-  foreground-color: #ffffff;
+.anvil-role-HeaderSelected{
+  color: #ffffff !important;
 }
+
+.anvil-role-Headerdefault{
+  color: #31e880 !important;
+}
+

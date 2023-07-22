@@ -4,10 +4,15 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
+from anvil_extras import augment
+from anvil_extras import popover
 from ..Portfolio import Portfolio
 from ..About import About
 from ..Contact import Contact
+from ..Landing import Landing
 
+"""the four variables below can surely be cleaned up"""
+landing_panel = Landing()
 about_panel = About()
 portfolio_panel = Portfolio()
 contact_panel = Contact()
@@ -21,25 +26,48 @@ class Main(MainTemplate):
     
   def header_main_click(self, **event_args):
     """This method is called when the link is clicked"""
+
+    """Clears the page and adds the requested panel"""
     get_open_form().content_panel.clear()
-    open_form('Main')
-    self.header_main.underline = true
+    get_open_form().content_panel.add_component(landing_panel)
+    
+    """changes which header shows as selected"""
+    self.header_about.role = "HeaderDefault"
+    self.header_contact.role = "HeaderDefault"
+    self.header_main.role = "HeaderSelected"
+    self.header_portfolio.role = "HeaderDefault"
+    
   def header_portfolio_click(self, **event_args):
     """This method is called when the link is clicked"""
+
+    """Clears the page and adds the requested panel"""
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(portfolio_panel)
 
+    """changes which header shows as selected"""
+    self.header_about.role = "HeaderDefault"
+    self.header_contact.role = "HeaderDefault"
+    self.header_main.role = "HeaderDefault"
+    self.header_portfolio.role = "HeaderSelected"
     
   def header_about_click(self, **event_args):
     """This method is called when the link is clicked"""
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(about_panel)
-
+    self.header_about.role = "HeaderSelected"
+    self.header_contact.role = "HeaderDefault"
+    self.header_main.role = "HeaderDefault"
+    self.header_portfolio.role = "HeaderDefault"
+    
   def header_contact_click(self, **event_args):
     """This method is called when the link is clicked"""
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(contact_panel)
-    self.refresh_data_bindings()
+    self.header_about.role = "HeaderDefault"
+    self.header_contact.role = "HeaderSelected"
+    self.header_main.role = "HeaderDefault"
+    self.header_portfolio.role = "HeaderDefault"
+
     
 
 
