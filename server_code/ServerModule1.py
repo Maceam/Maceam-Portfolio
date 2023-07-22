@@ -15,3 +15,9 @@ import anvil.server
 #   print("Hello, " + name + "!")
 #   return 42
 #
+@anvil.server.callable
+def imagefinder():
+    row=app_tables.personal_brand.get(name= 'logoglitchyy')
+    img = Image(source=row['portolioImages'])
+    
+    return img

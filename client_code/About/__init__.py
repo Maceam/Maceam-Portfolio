@@ -10,5 +10,6 @@ class About(AboutTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.logoglitchy = app_tables.personal_brand.get(q.like(name))
-    self.repeating_panel_1.items=app_tables.table_0.search()
+
+    img = anvil.server.call('imagefinder')
+    self.logoglitchy.add_component(img)
