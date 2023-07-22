@@ -2,6 +2,9 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/secrets.yml
+  client_config: {}
+  server_config: {}
 startup: {type: form, module: About}
 package_name: Custom_HTML_1
 allow_embedding: false
@@ -25,13 +28,18 @@ db_schema:
       admin_ui: {order: 0, width: 200}
       type: media
   personal_brand:
-    client: none
+    client: search
     server: full
     columns:
-    - name: portolioImages
+    - name: portfolioImages
       admin_ui: {order: 0, width: 200}
       type: media
     - name: name
       admin_ui: {order: 1, width: 200}
       type: string
     title: personal-brand
+secrets:
+  database1:
+    type: key
+    value: {2VGQPCU7JEOCBDK4: 06oGLAZl1WZh87xTJF2YIMpKmekRgqU01Rblz21ot0W/mKz1EKznZrAbRTc5vIOlmEbqwGgqLiFqSWHAqY+gAKgJ/+du5EJrcDev0CFoubpU+UAbu59G5DX4uWAMCUn4Id7tR3eFfMNrIdSFvh2wuGNbrba93To=}
+uplink_visible: true

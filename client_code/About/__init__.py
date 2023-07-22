@@ -5,11 +5,10 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 import anvil.image
+import anvil.media
 
 class About(AboutTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
-    self.init_components(**properties)
-
-    img = anvil.server.call('imagefinder')
-    self.logoglitchy.add_component(img)
+    table_row= app_tables.personal_brand.get(name=q.like('logoglitchyy'))
+    self.logoglitchy.source = table_row['portfolioImages']

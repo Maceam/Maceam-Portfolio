@@ -13,4 +13,22 @@ components:
   name: logoglitchy
   layout_properties: {grid_position: 'YWXABT,KONZNN'}
   data_bindings: []
+- type: RichText
+  properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+    foreground: '', visible: true, font_size: null, content: '"With over four years
+      of experience, I am a professional communications designer and data analyst.
+      My investigative approach has diversified my design proficiency, blending communication
+      design with unique programming and data science skills. I deliver high-quality
+      digital media and drive data-informed decisions. Adapting to new tech tools
+      is second nature to me, and I excel in dynamic team environments. Drawing from
+      my retail experience, I have a knack for interpreting client needs and collaborating
+      effectively. I have worked on diverse design solutions encompassing branding,
+      web design, digital media, and print media. Additionally, I have conducted thorough
+      market research to inform strategic design solutions. Proficient in Adobe CC,
+      website builders, marketing software, and social media platforms, I am well-equipped
+      to create impactful designs. My technical skills include glitch art and photography,
+      SQL/PLSQL, programming languages, and web development knowledge." ', font: '',
+    spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
+  name: rich_text_1
+  layout_properties: {grid_position: 'XUAIMK,EYGNCW'}
 is_package: true
