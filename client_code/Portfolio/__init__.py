@@ -4,6 +4,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
+from anvil_extras import *
 
 class Portfolio(PortfolioTemplate):
   def __init__(self, **properties):
