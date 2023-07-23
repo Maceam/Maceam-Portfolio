@@ -9,6 +9,8 @@ from ..About import About
 from ..Contact import Contact
 from ..Landing import Landing
 from anvil_extras import *
+from anvil_extras import popover
+from anvil_extras import augment
 
 
 class Main(MainTemplate):
@@ -16,7 +18,6 @@ class Main(MainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-  
   def header_main_click(self, **event_args):
     """This method is called when the link is clicked"""
    
@@ -72,8 +73,6 @@ class Main(MainTemplate):
     self.header_contact.role = "HeaderSelected"
     self.header_main.role = "HeaderDefault"
     self.header_portfolio.role = "HeaderDefault"
-
-
-
+    
 
 

@@ -17,12 +17,12 @@ class About(AboutTemplate):
     
     self.AboutTxt.border = "8px"
     self.AboutTxt.font_size = 24
-
-  def AboutTxt_show(self, **event_args):
-    animate(self.AboutTxt, fade_in, duration=3000)
-
+    
   def logoglitchy_show(self, **event_args):
-    animate(self.logoglitchy, fade_in, duration=1000)
+    animate(self.logoglitchy, fade_in, duration=3000)
+    
+  def AboutTxt_show(self, **event_args):
+    animate(self.AboutTxt, fade_in, duration=1000)
 
 
 
