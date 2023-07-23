@@ -48,7 +48,6 @@ class Main(MainTemplate):
     
   def header_about_click(self, **event_args):
     """This method is called when the link is clicked"""
-   
     """Clears the page and adds the requested panel"""
     about_panel = About()
     get_open_form().content_panel.clear()
@@ -62,7 +61,6 @@ class Main(MainTemplate):
     
   def header_contact_click(self, **event_args):
     """This method is called when the link is clicked"""
-    
     """Clears the page and adds the requested panel"""
     contact_panel = Contact()
     get_open_form().content_panel.clear()
@@ -73,6 +71,4 @@ class Main(MainTemplate):
     self.header_contact.role = "HeaderSelected"
     self.header_main.role = "HeaderDefault"
     self.header_portfolio.role = "HeaderDefault"
-    
-
 

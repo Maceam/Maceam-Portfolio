@@ -1,20 +1,35 @@
+.anvil-role-HeaderDefault{
+  color: #31e880;
+}
+
 .anvil-role-HeaderSelected{
   color: #ffffff !important;
-}
-
-.anvil-role-Headerdefault{
-  color: #31e880 !important;
-}
-
-.anvil-role-Headerdefault:hover{
-  background-color: #ffa220;
-  border: 1px dashed #888;
+  font-size: 222;
 }
 
 a:hover {
-  color: red !important;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: filter-animation;
 }
 
+@keyframes filter-animation {
+  0% {
+    color: #31e880;
+    filter: hue-rotate(0deg);
+
+  }
+  
+  50% {
+    filter: hue-rotate(360deg);
+
+  }
+  
+  100% {
+    filter: hue-rotate(720deg);
+    color: #31e880;
+  }
+}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -31,3 +46,10 @@ a:hover {
     background-image:  url(_/theme/maceam_logo_mark_green_rgb.png) !important;
 }
 
+.anvil-role-HeaderDefault{
+  color: #31e880;
+}
+
+.anvil-role-HeaderSelected{
+  color: #ffffff;
+}

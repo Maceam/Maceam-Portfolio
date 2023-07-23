@@ -1,5 +1,5 @@
 dependencies:
-- dep_id: dep_4tgk0uln6657mb
+- dep_id: dep_0rmgvgqn8vmhq7
   version: {dev: false}
   resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
 services:
