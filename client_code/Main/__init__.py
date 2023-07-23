@@ -10,6 +10,7 @@ from ..Contact import Contact
 from ..Landing import Landing
 from anvil_extras import *
 
+
 class Main(MainTemplate):
   
   def __init__(self, **properties):

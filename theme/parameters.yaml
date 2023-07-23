@@ -6,3 +6,6 @@ roles:
   components: [Link]
 - name: HeaderHover
   components: [Link]
+- name: AboutTxt
+  components: [RichText]
+  display_in_toolbox: false
