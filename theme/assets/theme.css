@@ -4,7 +4,6 @@
 
 .anvil-role-HeaderSelected{
   color: #ffffff !important;
-  font-size: 222;
 }
 
 a:hover {
@@ -43,13 +42,27 @@ a:hover {
     border-radius: 0;
     box-shadow: none;/*0px 0px 10px 10px #fcfcfc;*/
     background-color: transparent;
-    background-image:  url(_/theme/maceam_logo_mark_green_rgb.png) !important;
+    background-image:  url(_/theme/maceam_logo_mark_green_rgb.png);
 }
 
-.anvil-role-HeaderDefault{
-  color: #31e880;
+.btn-default:hover {
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: filter-animation;
+  background-color: #000000;
+  background-image: #transparent;
+  text-shadow: disabled;
+  box-shadow: disabled;
+
+.anvil-role-Submit{
+  border: 0px;
 }
 
-.anvil-role-HeaderSelected{
-  color: #ffffff;
+.btn{
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: filter-animation;
+  background-color: #ffffff;
+  background-image: #transparent;
 }
+/* pbsavy*/
