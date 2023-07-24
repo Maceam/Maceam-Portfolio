@@ -12,8 +12,19 @@ class Contact(ContactTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-
+  @anvil.email.handle_message(require_dkim=True)
   def ButtonSubmit_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
-
+    Name = self.NameTxt.text
+    Email = self.EmailTxt.text
+    Subject = self.SubjectTxt.text
+    Message = self.MsgTxt.text
+    if Name and Email and Subject and Message and msg.dkim.domains is not None:
+      anvil.server.call('add_contact_info', Name, Email, Subject, Message)
+      alert("Thanks for getting in touch!")
+      self.NameTxt.text = ""
+      self.EmailTxt.text = ""
+      self.SubjectTxt.text = ""
+      self.MsgTxt.text = ""
+    else:
+      alert("Please fill out the entire form before submitting.")
