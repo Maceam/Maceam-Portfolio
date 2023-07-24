@@ -9,3 +9,5 @@ roles:
 - name: AboutTxt
   components: [RichText]
   display_in_toolbox: false
+- name: Submit
+  components: [Button]
