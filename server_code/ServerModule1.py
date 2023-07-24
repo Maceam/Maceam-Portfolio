@@ -5,6 +5,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from datetime import datetime
+
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
 #
@@ -19,7 +20,10 @@ from datetime import datetime
 #
 @anvil.server.callable
 def add_contact_info(Name, Email, Subject, Message):
-  app_tables.contact.add_row(Name=Name, Email=Email, Subject=Subject, Message=Message, time=datetime.now())
-  anvil.email.send(from_name="Contact Form", 
+#if msg.dkim.domains is not None:
+    app_tables.contact.add_row(Name=Name, Email=Email, Subject=Subject, Message=Message, time=datetime.now())
+    anvil.email.send(from_name="Contact Form", 
                    subject="New Web Contact",
-                   text=f"New web contact from {name} ({email})\nTopic: {topic}\nComment/Question: {question}")
+                   text=f"New web contact from {Name} ({Email})\nTopic: {Subject}\nComment/Question: {Message}")
+  #else:
+    #print("This message wasn't signed at all") 
