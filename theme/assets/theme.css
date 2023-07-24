@@ -42,6 +42,7 @@ a:hover, a:focus {
     border-radius: 0;
     box-shadow: none;/*0px 0px 10px 10px #fcfcfc;*/
     background-color: transparent;
+    margin: auto;
     background-image:  url(_/theme/maceam_logo_mark_green_rgb.png);
 }
 
