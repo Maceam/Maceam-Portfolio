@@ -1,1 +1,11 @@
-roles: []
+roles:
+- name: HeaderSelected
+  components: [Link]
+  display_in_toolbox: false
+- name: HeaderDefault
+  components: [Link]
+- name: HeaderHover
+  components: [Link]
+- name: AboutTxt
+  components: [RichText]
+  display_in_toolbox: false

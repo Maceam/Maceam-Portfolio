@@ -1,8 +1,15 @@
+dependencies:
+- dep_id: dep_0rmgvgqn8vmhq7
+  version: {dev: false}
+  resolution_hints: {app_id: C6ZZPAPN4YYF5NVJ, name: Anvil Extras, package_name: anvil_extras}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
 - source: /runtime/services/anvil/secrets.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
 startup: {type: form, module: Main}
@@ -42,6 +49,26 @@ db_schema:
       admin_ui: {order: 1, width: 200}
       type: string
     title: personal-brand
+  contact:
+    client: none
+    server: full
+    columns:
+    - name: Name
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: Subject
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: Email
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: Message
+      admin_ui: {order: 3, width: 200}
+      type: string
+    - name: time
+      admin_ui: {order: 4, width: 200}
+      type: string
+    title: Contact
 secrets:
   database1:
     type: key

@@ -1,12 +1,12 @@
-from ._anvil_designer import PortfolioTemplate
+from ._anvil_designer import LandingTemplate
 from anvil import *
+import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-import anvil.server
-from anvil_extras import *
 
-class Portfolio(PortfolioTemplate):
+
+class Landing(LandingTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

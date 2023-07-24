@@ -1,16 +1,24 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"EYGNCW":60,"CBUPOC":10,"SFGYTZ":10}',
+    spacing_below: small, background: ''}
 components:
 - type: Image
   properties: {role: null, vertical_align: center, height: 200, tooltip: '', border: '',
-    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-    source: '', spacing_below: small, background: '', horizontal_align: center}
+    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: medium,
+    source: '', spacing_below: medium, background: '', horizontal_align: center}
   name: logoglitchy
   layout_properties: {grid_position: 'YWXABT,KONZNN'}
   data_bindings: []
+  event_bindings: {show: logoglitchy_show}
+- type: Spacer
+  properties: {visible: false, spacing_above: small, spacing_below: small, height: 32,
+    tooltip: ''}
+  name: spacer_2
+  layout_properties: {grid_position: 'XUAIMK,SFGYTZ'}
 - type: RichText
-  properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+  properties: {role: AboutTxt, align: left, tooltip: '', enable_slots: true, border: '',
     foreground: '', visible: true, font_size: null, content: "Hello! It is great to\
       \ see you here. I am a Maysam, a professional Communications Designer as well\
       \ as  a Data Analyst in training. My interest is in building solutions through\
@@ -19,16 +27,16 @@ components:
       \ from the norm, being able to continuously practise, iterate, learn, glitch\
       \ and experiment are the essence of life. \n\nIf I'm not working on personal\
       \ projects you can often find me doing photography, reading, brewing coffee\
-      \ or playing the odd video game to unwind.", font: '', spacing_above: small,
-    spacing_below: small, data: null, background: '', format: markdown}
-  name: rich_text_1
+      \ or playing the odd video game to unwind.\n\nI am always open to collaboration\
+      \ and communication so please feel free to send me an email or contact me directly\
+      \ through the website. I look forward to hearing from you. ", font: '', spacing_above: medium,
+    spacing_below: medium, data: null, background: '', format: markdown}
+  name: AboutTxt
   layout_properties: {grid_position: 'XUAIMK,EYGNCW'}
-- type: RichText
-  properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
-    foreground: '', visible: true, font_size: null, content: 'I am always open to
-      collaboration and communication so please feel free to send me an email or contact
-      me directly through the website. I look forward to hearing from you. ', font: '',
-    spacing_above: small, spacing_below: small, data: null, background: '', format: markdown}
-  name: rich_text_2
-  layout_properties: {grid_position: 'FJTAVB,HMIQBO'}
+  event_bindings: {show: AboutTxt_show}
+- type: Spacer
+  properties: {visible: false, spacing_above: small, spacing_below: small, height: 32,
+    tooltip: ''}
+  name: spacer_1
+  layout_properties: {grid_position: 'XUAIMK,CBUPOC'}
 is_package: true
