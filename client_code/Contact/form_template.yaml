@@ -1,5 +1,46 @@
 container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
-components: []
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: ColoumnContact
+  layout_properties: {grid_position: 'HXLUXP,GTRXWN'}
+  components:
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Name,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: NameTxt
+    layout_properties: {grid_position: 'GLGWER,YSDMKH'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Contact Email,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: email, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: EmailTxt
+    layout_properties: {grid_position: 'HIONER,QDYEAS'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Optional Number,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: NumTxt
+    layout_properties: {grid_position: 'YATPYA,FWPKLJ'}
+  - type: TextArea
+    properties: {role: null, align: left, height: '', tooltip: '', placeholder: Say what you want!,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      auto_expand: false, font: '', spacing_above: small, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: MsgTxt
+    layout_properties: {grid_position: 'GZKESJ,DKVVTL'}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Submit, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: ButtonSubmit
+    layout_properties: {grid_position: 'HHUUUG,YCBILP'}
+    event_bindings: {click: ButtonSubmit_click}
 is_package: true
