@@ -55,7 +55,7 @@ a:hover, a:focus {
   outline: 0px 0px transparent;
 }
 
-.btn, .btn-default:hover, .btn-default:focus {
+.btn-default:hover, .btn-default:focus {
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-name: filter-animation;
