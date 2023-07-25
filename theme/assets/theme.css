@@ -1,3 +1,7 @@
+div{
+background: #121218;
+}
+
 .anvil-role-HeaderDefault{
   color: #31e880;
 }
@@ -66,5 +70,4 @@ a:hover, a:focus {
   border: 0px 0px transparent;
   outline: 0px 0px transparent;
 ]
-
 

@@ -39,4 +39,8 @@ components:
     tooltip: ''}
   name: spacer_1
   layout_properties: {grid_position: 'XUAIMK,CBUPOC'}
+- type: Spacer
+  properties: {height: 465}
+  name: spacer_3
+  layout_properties: {grid_position: 'KJNWMA,HAIKBA'}
 is_package: true
