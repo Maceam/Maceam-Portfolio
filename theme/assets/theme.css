@@ -2,6 +2,20 @@ div{
 background: #121218;
 }
 
+body{
+  background: #121218;
+  /*background: linear-gradient(to bottom, #121218, #ffffff);
+  transition: background 2s ease;
+  padding: 0px;*/
+}
+
+.anvil-component.form-control{
+color: #31e880;
+background: #121218;
+border-style: solid;
+border-color: #DFE3EF;
+}
+
 .anvil-role-HeaderDefault{
   color: #31e880;
 }

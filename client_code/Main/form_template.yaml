@@ -50,9 +50,14 @@ components:
     data_bindings: []
 - type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: small, spacing_above: small, col_widths: '', spacing_below: small,
+    wrap_on: mobile, col_spacing: small, spacing_above: small, col_widths: '', spacing_below: none,
     background: '#121218'}
   name: content_panel
+  layout_properties: {slot: default}
+- type: Spacer
+  properties: {visible: true, spacing_above: small, spacing_below: none, height: 32,
+    tooltip: ''}
+  name: SpacerGradient
   layout_properties: {slot: default}
 container:
   type: HtmlTemplate
