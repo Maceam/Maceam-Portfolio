@@ -18,6 +18,7 @@ class Main(MainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    #self.header_panel.role = "FlowPanelSticky"
   def header_main_click(self, **event_args):
     """This method is called when the link is clicked"""
    
