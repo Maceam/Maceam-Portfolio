@@ -6,7 +6,7 @@ container:
 components:
 - type: Image
   properties: {role: null, vertical_align: center, height: 239, tooltip: '', border: '',
-    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: medium,
+    foreground: '', visible: true, display_mode: original_size, spacing_above: medium,
     source: '', spacing_below: medium, background: '', horizontal_align: center}
   name: logoglitchy
   layout_properties: {grid_position: 'YWXABT,KONZNN'}
