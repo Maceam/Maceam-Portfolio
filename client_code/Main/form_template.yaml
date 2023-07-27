@@ -63,3 +63,4 @@ container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
     role: header_off, html: '@theme:standard-page.html'}
+  event_bindings: {show: form_show}

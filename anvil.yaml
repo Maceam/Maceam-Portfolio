@@ -12,7 +12,7 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: Form1}
+startup: {type: form, module: Main}
 package_name: Maceam_Portfolio
 allow_embedding: false
 name: Maceam Portfolio
@@ -33,12 +33,15 @@ native_deps: {head_html: '<link rel="preconnect" href="https://fonts.googleapis.
 db_schema:
   portfolio_images:
     title: portfolio-images
-    client: none
+    client: search
     server: full
     columns:
-    - name: exemplar
+    - name: PortImg
       admin_ui: {order: 0, width: 200}
       type: media
+    - name: Name
+      admin_ui: {order: 1, width: 200}
+      type: string
   personal_brand:
     client: search
     server: full

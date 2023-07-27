@@ -13,3 +13,5 @@ roles:
   components: [Button]
 - name: FlowPanelSticky
   components: [FlowPanel]
+- name: LandingImg
+  components: [Image]

@@ -13,6 +13,7 @@ from anvil_extras import popover
 from anvil_extras import augment
 from processing import *
 import random
+from anvil.js import window
 
 
 class Main(MainTemplate):
@@ -21,6 +22,7 @@ class Main(MainTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     #self.header_panel.role = "FlowPanelSticky"
+    
   def header_main_click(self, **event_args):
     """This method is called when the link is clicked"""
    
@@ -74,4 +76,17 @@ class Main(MainTemplate):
     self.header_contact.role = "HeaderSelected"
     self.header_main.role = "HeaderDefault"
     self.header_portfolio.role = "HeaderDefault"
+
+  def LandingImg_show(self, **event_args):
+    landing_panel = Landing()
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(landing_panel)
+
+  def form_show(self, **event_args):
+    landing_panel = Landing()
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(landing_panel)
+
+
+
 
