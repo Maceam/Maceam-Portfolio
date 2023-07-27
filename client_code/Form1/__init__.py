@@ -12,24 +12,21 @@ from anvil_extras import *
 from anvil_extras import popover
 from anvil_extras import augment
 from processing import *
-import random
+
 
 class Form1(Form1Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
-  def canvas_1_show(self, **event_args):
-    c = self.canvas_1
     
   def canvas_1_reset(self, **event_args):
-    """This method is called when the Canvas is shown on the screen"""
+    """This method is called when the canvas is reset and cleared, such as when the window resizes, or the canvas is added to a form."""
     c = self.canvas_1
-  
+    self.canvas_1.clear_rect(0, 0, self.canvas_1.width, self.canvas_1.height)
     c.begin_path()
     c.move_to(100,100)
     c.line_to(100,200)
-    c.line_to(200,200)
+    c.line_to(self.canvas_1.width,self.canvas_1.height)
     c.close_path()
   
     c.stroke_style = "#2196F3"
@@ -38,3 +35,8 @@ class Form1(Form1Template):
   
     c.fill()
     c.stroke()
+
+
+
+
+    
