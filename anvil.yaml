@@ -12,7 +12,7 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: Main}
+startup: {type: form, module: Form1}
 package_name: Maceam_Portfolio
 allow_embedding: false
 name: Maceam Portfolio
