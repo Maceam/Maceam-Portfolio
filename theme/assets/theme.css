@@ -87,3 +87,14 @@ a:hover, a:focus {
 }
 
 
+.anvil-role-LandingImg{
+
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: filter-animation;
+  background-color: #121218;
+  background-image: #transparent;
+  text-shadow: 0px 0px transparent;
+  border: 0px 0px transparent;
+  outline: 0px 0px transparent;
+}

@@ -15,6 +15,7 @@ class Landing(LandingTemplate):
     self.init_components(**properties)
     self.add_component(LandPanel)
     LandPanel.add_component(LandImg, full_width_row=True)
+    LandImg.role="LandingImg"
     #self.add_component(LandImg)
 
 
