@@ -6,7 +6,7 @@ container:
 components:
 - type: Image
   properties: {role: null, vertical_align: center, height: 239, tooltip: '', border: '',
-    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: medium,
+    foreground: '', visible: true, display_mode: original_size, spacing_above: medium,
     source: '', spacing_below: medium, background: '', horizontal_align: center}
   name: logoglitchy
   layout_properties: {grid_position: 'YWXABT,KONZNN'}
@@ -19,13 +19,13 @@ components:
   layout_properties: {grid_position: 'XUAIMK,SFGYTZ'}
 - type: RichText
   properties: {role: AboutTxt, align: left, tooltip: '', enable_slots: true, border: '',
-    foreground: '', visible: true, font_size: null, content: "Hello! It is great to\
-      \ see you here. I am a Maysam, a professional Communications Designer as well\
-      \ as  a Data Analyst in training. My interest is in building solutions through\
-      \ a data driven, experimental and collaborative approach to the problem at hand.\
-      \ I believe in creating things that break expectations - things which diverge\
-      \ from the norm, being able to continuously practise, iterate, learn, glitch\
-      \ and experiment are the essence of life. \n\nIf I'm not working on personal\
+    foreground: '#31e880', visible: true, font_size: null, content: "Hello! It is\
+      \ great to see you here. I am a Maysam, a professional Communications Designer\
+      \ as well as  a Data Analyst in training. My interest is in building solutions\
+      \ through a data driven, experimental and collaborative approach to the problem\
+      \ at hand. I believe in creating things that break expectations - things which\
+      \ diverge from the norm, being able to continuously practise, iterate, learn,\
+      \ glitch and experiment are the essence of life. \n\nIf I'm not working on personal\
       \ projects you can often find me doing photography, reading, brewing coffee\
       \ or playing the odd video game to unwind.\n\nI am always open to collaboration\
       \ and communication so please feel free to send me an email or contact me directly\
@@ -40,7 +40,7 @@ components:
   name: spacer_1
   layout_properties: {grid_position: 'XUAIMK,CBUPOC'}
 - type: Spacer
-  properties: {height: 465}
+  properties: {height: 124}
   name: spacer_3
   layout_properties: {grid_position: 'KJNWMA,HAIKBA'}
 is_package: true

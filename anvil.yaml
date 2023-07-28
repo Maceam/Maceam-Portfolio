@@ -12,6 +12,9 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/files.yml
+  client_config: {}
+  server_config: {file_table: files}
 startup: {type: form, module: Main}
 package_name: Maceam_Portfolio
 allow_embedding: false
@@ -31,14 +34,6 @@ native_deps: {head_html: '<link rel="preconnect" href="https://fonts.googleapis.
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap"
     rel="stylesheet">'}
 db_schema:
-  portfolio_images:
-    title: portfolio-images
-    client: none
-    server: full
-    columns:
-    - name: exemplar
-      admin_ui: {order: 0, width: 200}
-      type: media
   personal_brand:
     client: search
     server: full
@@ -70,6 +65,31 @@ db_schema:
       admin_ui: {order: 5, width: 200}
       type: datetime
     title: Contact
+  showcase:
+    title: Showcase
+    client: search
+    server: full
+    columns:
+    - name: PortImg
+      admin_ui: {order: 0, width: 200}
+      type: media
+    - name: Name
+      admin_ui: {order: 1, width: 200}
+      type: string
+  files:
+    client: none
+    server: full
+    columns:
+    - name: path
+      type: string
+      admin_ui: {order: 0, width: 200}
+    - name: file
+      type: media
+      admin_ui: {order: 1, width: 200}
+    - name: file_version
+      type: string
+      admin_ui: {order: 2, width: 200}
+    title: Files
 secrets:
   database1:
     type: key

@@ -11,3 +11,7 @@ roles:
   display_in_toolbox: false
 - name: Submit
   components: [Button]
+- name: FlowPanelSticky
+  components: [FlowPanel]
+- name: LandingImg
+  components: [Image]

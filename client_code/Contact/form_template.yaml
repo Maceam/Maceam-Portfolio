@@ -13,13 +13,13 @@ components:
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: Enter name.,
       placeholder: Name, border: '', enabled: true, foreground: '', visible: true,
-      text: '', font_size: 16, font: 'Source Code Pro ', spacing_above: small, type: text,
+      text: '', font_size: 22, font: 'Source Code Pro ', spacing_above: small, type: text,
       spacing_below: medium, italic: false, background: '', bold: false, underline: false}
     name: NameTxt
     layout_properties: {grid_position: 'GLGWER,YSDMKH'}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Contact Email,
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 16,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 22,
       font: 'Source Code Pro ', spacing_above: small, type: email, spacing_below: medium,
       italic: false, background: '', bold: false, underline: false}
     name: EmailTxt
@@ -28,30 +28,30 @@ components:
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: Enter subject.,
       placeholder: Subject, border: '', enabled: true, foreground: '', visible: true,
-      text: '', font_size: 16, font: 'Source Code Pro ', spacing_above: small, type: text,
+      text: '', font_size: 22, font: 'Source Code Pro ', spacing_above: small, type: text,
       spacing_below: medium, italic: false, background: '', bold: false, underline: false}
     name: SubjectTxt
     layout_properties: {grid_position: 'IFZQZH,ZKSTNS'}
   - type: TextArea
     properties: {role: null, align: left, height: 116.4667, tooltip: Enter message.,
       placeholder: Say what you want!, border: '', enabled: true, foreground: '',
-      visible: true, text: '', font_size: 16, auto_expand: false, font: 'Source Code
+      visible: true, text: '', font_size: 22, auto_expand: false, font: 'Source Code
         Pro ', spacing_above: small, spacing_below: medium, italic: false, background: '',
       bold: false, underline: false}
     name: MsgTxt
     layout_properties: {grid_position: 'GZKESJ,DKVVTL'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '#31e880',
-      visible: true, text: 'Is boiling water hot or cold? Please answer.', font_size: 16,
+      visible: true, text: 'Is boiling water hot or cold? Please answer.', font_size: 22,
       font: 'Source Code Pro ', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
+      italic: false, background: '', bold: true, underline: false, icon: ''}
     name: label_1
     layout_properties: {grid_position: 'KEEXPO,FJCGBK'}
   - type: TextBox
     properties: {role: null, align: left, hide_text: false, tooltip: 'An accessable
         captcha alternative, not case sensitive. Is boiling water hot or cold? Please
         answer.', placeholder: 'An accessable captcha alternative, not case sensitive.',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 16,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 22,
       font: 'Source Code Pro ', spacing_above: small, type: text, spacing_below: small,
       italic: false, background: '', bold: false, underline: false}
     name: VerifyTxt
@@ -64,4 +64,8 @@ components:
     name: ButtonSubmit
     layout_properties: {grid_position: 'BOOITL,EFIGKX', full_width_row: true}
     event_bindings: {click: ButtonSubmit_click, show: ButtonSubmit_show}
+- type: Spacer
+  properties: {height: 107}
+  name: spacer_1
+  layout_properties: {grid_position: 'PHDQVU,IRVJJZ'}
 is_package: true
