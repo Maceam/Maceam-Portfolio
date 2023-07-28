@@ -16,6 +16,7 @@ import random
 from anvil.js import window
 
 
+
 class Main(MainTemplate):
   
   def __init__(self, **properties):
