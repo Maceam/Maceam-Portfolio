@@ -4,7 +4,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
-from ..Portfolio import Portfolio
+from ..Portfolio import *
 from ..About import About
 from ..Contact import Contact
 from ..Landing import Landing

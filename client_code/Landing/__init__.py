@@ -4,6 +4,9 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from ..Portfolio import Portfolio
+from ..About import About
+from ..Contact import Contact
 
 class Landing(LandingTemplate):
   def __init__(self, **properties):
@@ -23,5 +26,11 @@ class Landing(LandingTemplate):
     LandImg.role="LandingImg"
 
   def ClickMeMethod(self, **event_args): 
-    ButtonMoving = Button(role= "CallToAction", text= "CLICK ME", align= "right", font= "D0tmatrix", font_size= 24)
+    ButtonMoving = Button(role= "CallToAction", text= "Come Explore", align= "right", font= "D0tmatrix", font_size= 24)
     self.add_component(ButtonMoving)
+    ButtonMoving.add_event_handler('click', self.ClickMeMethod_click)
+
+  def ClickMeMethod_click(self, **event_args): 
+    portfolio_panel = Portfolio()
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(portfolio_panel)

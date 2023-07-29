@@ -31,10 +31,16 @@ class Portfolio(PortfolioTemplate):
     WorkPanel.add_component(Work3)
     WorkPanel.add_component(Work4)
 
+
   def ButtonExpander(self, **event_args):
     ButtonExp= Button(text= "The Builders Cradel", align= "center")
     ButtonExp.role= "ButtonPortfolio"
     self.add_component(ButtonExp)
+    ButtonExp.add_event_handler('click', self.ButtonExpander_click)
 
   def ButtonExpander_click(self, **event_args):
-    pass
+    ReAdd= Portfolio()
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(ReAdd)
+    BuildersCradleForm= BuildersCradle()
+    self.add_component(BuildersCradleForm)
