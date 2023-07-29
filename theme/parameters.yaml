@@ -15,3 +15,5 @@ roles:
   components: [FlowPanel]
 - name: LandingImg
   components: [Image]
+- name: ButtonPortfolio
+  components: [Button]

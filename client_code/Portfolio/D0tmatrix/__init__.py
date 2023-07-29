@@ -1,11 +1,11 @@
-from ._anvil_designer import Entry1Template
+from ._anvil_designer import D0tmatrixTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class Entry1(Entry1Template):
+class D0tmatrix(D0tmatrixTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

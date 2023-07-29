@@ -1,11 +1,11 @@
-from ._anvil_designer import Entry2Template
+from ._anvil_designer import OnliedTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class Entry2(Entry2Template):
+class Onlied(OnliedTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
