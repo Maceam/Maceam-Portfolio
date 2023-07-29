@@ -17,3 +17,5 @@ roles:
   components: [Image]
 - name: ButtonPortfolio
   components: [Button]
+- name: CallToAction
+  components: [Button]

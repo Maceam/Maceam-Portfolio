@@ -10,7 +10,7 @@ class Landing(LandingTemplate):
     self.init_components(**properties)
     # Set Form properties and Data Bindings.
     self.LandginMethod()
-  
+    self.ClickMeMethod()
 
   #make a def (aka method) for adding the panel  
   def LandginMethod(self, **event_args): 
@@ -21,3 +21,7 @@ class Landing(LandingTemplate):
     self.add_component(LandPanel)
     LandPanel.add_component(LandImg, full_width_row=True)
     LandImg.role="LandingImg"
+
+  def ClickMeMethod(self, **event_args): 
+    ButtonMoving = Button(role= "CallToAction", text= "CLICK ME", align= "right", font= "D0tmatrix", font_size= 24)
+    self.add_component(ButtonMoving)
