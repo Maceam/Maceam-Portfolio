@@ -33,7 +33,7 @@ class Portfolio(PortfolioTemplate):
 
 
   def ButtonExpander(self, **event_args):
-    ButtonExp= Button(text= "The Builders Cradel", align= "center")
+    ButtonExp= Button(text= "The Builders Cradel", align= "center", font_size= 22)
     ButtonExp.role= "ButtonPortfolio"
     self.add_component(ButtonExp)
     ButtonExp.add_event_handler('click', self.ButtonExpander_click)

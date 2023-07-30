@@ -10,6 +10,7 @@ background: #121218;
 
 body{
   background: #121218;
+  padding: 24px;
   /*background: linear-gradient(to bottom, #121218, #ffffff);
   transition: background 2s ease;
   padding: 0px;*/
@@ -20,6 +21,7 @@ color: #31e880;
 background: #121218;
 border-style: solid;
 border-color: #DFE3EF;
+
 }
 
 .anvil-role-HeaderDefault{
@@ -112,18 +114,38 @@ a:hover, a:focus {
 .anvil-role-ButtonPortfolio{
   font-family: "D0tmatrix";
   font-weight: "medium";
-  font-size: 26pt; 
+  font-size: 24pt; 
   text-align: "center";
   width: 100%;
   position: static;
   margin: auto;
   padding: 10px;
+  opacity: 80%;
 }
 
 .anvil-role-CallToAction{
-  opacity: 100;
+  opacity: 90%;
   position: absolute; 
-  top: 100px;
-  right: 100px:
-  position: sticky;
+  top: 0px;
+  right: 0px:
+}
+
+.modal-body.alert-text{
+  font-family: "Source Code Pro";
+  font-weight: "light";
+  font-size: 22pt; 
+  text-align: "center";
+  width: 100%;
+  position: static;
+  margin: auto;
+  padding: 8px;
+  color: #31e880;
+}
+
+.btn-success:focus, .btn-success:hover, .btn-success{
+  color: #121218;
+  background-color: #transparent;
+  font-family: "Source Code Pro";
+  font-weight: "bold";
+  font-size: 16pt; 
 }
