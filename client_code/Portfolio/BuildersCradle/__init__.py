@@ -10,17 +10,18 @@ class BuildersCradle(BuildersCradleTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     #print(len(app_tables.showcase.search())) #this just returns the number of rows in a table
-    self.RepeatC2C()
+    self.RepeatC2C() #this needs to be changed to not load until a button in portfolio is clicked.
     
   def RepeatC2C(self, **event_args):
     C2CRepeaterPanel= RepeatingPanel()
     C2CFlowPanel= FlowPanel()
+    self.add_component(C2CFlowPanel)
+    #table_row_total= len(app_tables.showcase.search()) #not nessesary just tells the total table size
+    uwu= app_tables.showcase.search(Name=q.like('C2C%'))
+    for Name in uwu:
+      img = Image(display_mode= "fill_width", source= Name['PortImg'], vertical_align= "center")
+      C2CFlowPanel.add_component(img)
 
-    table_row= app_tables.showcase.search(Name=q.like('C2C%'))
-    Img = Image(display_mode= "fill_width", source= table_row['PortImg'], vertical_align= "center")
-    self.C2CFlowPanel.add_component(Img)
-    
-    
     #self.ButtonExpander() this has been moved and not needed for now if readded add below self.init_compnents
     # Any code you write here will run before the form opens.
 #we have moved the button expander elsewhere

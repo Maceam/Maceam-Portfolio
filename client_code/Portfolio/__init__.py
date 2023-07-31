@@ -43,4 +43,5 @@ class Portfolio(PortfolioTemplate):
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(ReAdd)
     BuildersCradleForm= BuildersCradle()
+    BuildersCradleForm.clear()
     self.add_component(BuildersCradleForm)
