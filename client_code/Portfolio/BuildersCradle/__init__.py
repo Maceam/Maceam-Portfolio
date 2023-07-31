@@ -5,15 +5,22 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-
 class BuildersCradle(BuildersCradleTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    #print(len(app_tables.showcase.search())) #this just returns the number of rows in a table
+    self.RepeatC2C()
+    
+  def RepeatC2C(self, **event_args):
+    C2CRepeaterPanel= RepeatingPanel()
+    C2CFlowPanel= FlowPanel()
 
-  def whatever(self, **event_args):
-    pass
-
+    table_row= app_tables.showcase.search(Name=q.like('C2C%'))
+    Img = Image(display_mode= "fill_width", source= table_row['PortImg'], vertical_align= "center")
+    self.C2CFlowPanel.add_component(Img)
+    
+    
     #self.ButtonExpander() this has been moved and not needed for now if readded add below self.init_compnents
     # Any code you write here will run before the form opens.
 #we have moved the button expander elsewhere
