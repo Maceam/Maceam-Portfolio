@@ -15,6 +15,7 @@ class Landing(LandingTemplate):
     self.LandginMethod()
     self.ClickMeMethod()
 
+
   #make a def (aka method) for adding the panel  
   def LandginMethod(self, **event_args): 
   # Any code you write here will run before the form opens.
@@ -23,8 +24,14 @@ class Landing(LandingTemplate):
     LandPanel = ColumnPanel()
     self.add_component(LandPanel)
     LandPanel.add_component(LandImg, full_width_row=True)
+    LandPanel.add_event_handler(click(left_click), self.link_LandginMethod_click)
     LandImg.role="LandingImg"
 
+  def link_LandginMethod_click(self, **event_args): 
+    portfolio_panel = Portfolio()
+    get_open_form().content_panel.clear()
+    get_open_form().content_panel.add_component(portfolio_panel)
+    
   def ClickMeMethod(self, **event_args): 
     ButtonMoving = Button(role= "CallToAction", text= "Come Explore", align= "right", font= "D0tmatrix", font_size= 24)
     self.add_component(ButtonMoving)
