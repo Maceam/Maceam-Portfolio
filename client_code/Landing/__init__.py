@@ -17,20 +17,18 @@ class Landing(LandingTemplate):
 
 
   #make a def (aka method) for adding the panel  
+  
   def LandginMethod(self, **event_args): 
   # Any code you write here will run before the form opens.
     table_row= app_tables.showcase.get(Name=q.like('MelbourneFed'))
     LandImg = Image(display_mode= "fill_width", source= table_row['PortImg'], vertical_align= "center")
+    HeroImg= Link()
     LandPanel = ColumnPanel()
-    self.add_component(LandPanel)
+    self.add_component(HeroImg)
+    HeroImg.add_component(LandPanel)
     LandPanel.add_component(LandImg, full_width_row=True)
-    LandPanel.add_event_handler(click(left_click), self.link_LandginMethod_click)
     LandImg.role="LandingImg"
-
-  def link_LandginMethod_click(self, **event_args): 
-    portfolio_panel = Portfolio()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(portfolio_panel)
+    HeroImg.add_event_handler('click', self.ClickMeMethod_click)
     
   def ClickMeMethod(self, **event_args): 
     ButtonMoving = Button(role= "CallToAction", text= "Come Explore", align= "right", font= "D0tmatrix", font_size= 24)
