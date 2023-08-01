@@ -17,21 +17,11 @@ class Portfolio(PortfolioTemplate):
     # Any code you write here will run before the form opens.
     self.FolioPanelMethod()
     self.ButtonExpander()
-
   #Portfolio Panel constructor
   def FolioPanelMethod(self, **event_args):
-    Work1= HomeOdyssey()
-    Work2= BuildersCradle()
-    Work3= D0tmatrix()
-    Work4= Onlied()
     WorkPanel= FlowPanel(align= "center")
     self.add_component(WorkPanel)
-    WorkPanel.add_component(Work1)
-    WorkPanel.add_component(Work2)
-    WorkPanel.add_component(Work3)
-    WorkPanel.add_component(Work4)
-
-
+    
   def ButtonExpander(self, **event_args):
     ButtonExp= Button(text= "The Builders Cradel", align= "center", font_size= 22)
     ButtonExp.role= "ButtonPortfolio"
@@ -39,9 +29,5 @@ class Portfolio(PortfolioTemplate):
     ButtonExp.add_event_handler('click', self.ButtonExpander_click)
 
   def ButtonExpander_click(self, **event_args):
-    ReAdd= Portfolio()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(ReAdd)
-    BuildersCradleForm= BuildersCradle()
-    BuildersCradleForm.clear()
-    self.add_component(BuildersCradleForm)
+    C2CBuilders= BuildersCradle()
+    self.add_component(C2CBuilders)

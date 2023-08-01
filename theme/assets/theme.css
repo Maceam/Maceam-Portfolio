@@ -21,7 +21,6 @@ color: #31e880;
 background: #121218;
 border-style: solid;
 border-color: #DFE3EF;
-
 }
 
 .anvil-role-HeaderDefault{
@@ -96,7 +95,6 @@ a:hover, a:focus {
 
 
 .anvil-role-LandingImg{
-
   align-items: center;
   justify-content: center;
   animation-duration: 8s;
@@ -125,9 +123,12 @@ a:hover, a:focus {
 
 .anvil-role-CallToAction{
   opacity: 90%;
+  top: 35px;
+  left: 0px;
+  padding: 0px;
+  align-items: left;
+  justify-content: left;
   position: absolute; 
-  top: 0px;
-  right: 0px:
 }
 
 .modal-body.alert-text{
