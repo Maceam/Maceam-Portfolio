@@ -17,8 +17,8 @@ class BuildersCradle(BuildersCradleTemplate):
     C2CFlowPanel= FlowPanel()
     self.add_component(C2CFlowPanel)
     #table_row_total= len(app_tables.showcase.search()) #not nessesary just tells the total table size
-    uwu= app_tables.showcase.search(Name=q.like('C2C%'))
-    for Name in uwu:
+    FolioWork= app_tables.showcase.search(Name=q.like('C2C%'))
+    for Name in FolioWork:
       img = Image(display_mode= "fill_width", source= Name['PortImg'], vertical_align= "center")
       C2CFlowPanel.add_component(img)
 
