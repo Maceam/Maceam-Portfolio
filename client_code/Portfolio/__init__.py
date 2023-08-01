@@ -15,13 +15,8 @@ class Portfolio(PortfolioTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
-    self.C2CButton()
-    self.OnliedButton()
-    self.D0tmatrixButton()
-    self.HomeOdButton()
+    self.ButtonHolder()
     
-    
-
   def C2CButton(self, **event_args):
     ButtonExp= Button(text= "The Builders Cradel", align= "full", font_size= 22, spacing_above= "none", spacing_below= "none")
     ButtonExp.role= "ButtonPortfolio"
@@ -32,8 +27,8 @@ class Portfolio(PortfolioTemplate):
     ReAdd= Portfolio() 
     BuildersCradleForm= BuildersCradle()
     get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(ReAdd)
     get_open_form().content_panel.add_component(BuildersCradleForm)
+    get_open_form().content_panel.add_component(ReAdd)
 
   def D0tmatrixButton(self, **event_args):
     ButtonExp= Button(text= "D0tmatrix: Typeface", align= "full", font_size= 22, spacing_above= "small", spacing_below= "small")
@@ -45,9 +40,9 @@ class Portfolio(PortfolioTemplate):
     ReAdd= Portfolio() 
     D0tmatrixForm= D0tmatrix()
     get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(ReAdd)
     get_open_form().content_panel.add_component(D0tmatrixForm)
-
+    get_open_form().content_panel.add_component(ReAdd)
+    
   def HomeOdButton(self, **event_args):
     ButtonExp= Button(text= "Home Odyssey, Viynl Concept", align= "full", font_size= 22, spacing_above= "small", spacing_below= "small")
     ButtonExp.role= "ButtonPortfolio"
@@ -58,9 +53,8 @@ class Portfolio(PortfolioTemplate):
     ReAdd= Portfolio() 
     HomeOdForm= HomeOdyssey()
     get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(ReAdd)
     get_open_form().content_panel.add_component(HomeOdForm)
-
+    get_open_form().content_panel.add_component(ReAdd)
   def OnliedButton(self, **event_args):
     ButtonExp= Button(text= "Onlied: Awareness", align= "full", font_size= 22, spacing_above= "small", spacing_below= "small")
     ButtonExp.role= "ButtonPortfolio"
@@ -71,5 +65,12 @@ class Portfolio(PortfolioTemplate):
     ReAdd= Portfolio() 
     OnliedForm= Onlied()
     get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(ReAdd)
     get_open_form().content_panel.add_component(OnliedForm)
+    get_open_form().content_panel.add_component(ReAdd)
+    
+  def ButtonHolder(self, **event_args):
+    self.C2CButton()
+    self.OnliedButton()
+    self.D0tmatrixButton()
+    self.HomeOdButton()
+    

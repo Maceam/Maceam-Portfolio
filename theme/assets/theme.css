@@ -111,19 +111,27 @@ a:hover, a:focus {
   border: 0px 0px transparent;
   outline: 0px 0px transparent; 
 }
-
-
+.anvil-role-FlowPanelSticky{
+position: sticky; 
+top: 0px;
+z-index:12;
+}
 /*_/theme/D0tmatrix.otf */ 
 .anvil-role-ButtonPortfolio{
   font-family: "Source Code Pro";
   font-weight: "light";
   font-size: 24pt; 
-  text-align: "center";
+  text-align: "left";
   width: 100%;
   position: relative;
   margin: auto;
   padding: 8px;
   opacity: 100%;
+          -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
 .anvil-role-ButtonPortfolio: click{

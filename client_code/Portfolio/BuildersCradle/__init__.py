@@ -10,7 +10,7 @@ class BuildersCradle(BuildersCradleTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     #print(len(app_tables.showcase.search())) #this just returns the number of rows in a table
-    self.RepeatC2C() #this needs to be changed to not load until a button in portfolio is clicked.
+    self.RepeatC2C()
     
   def RepeatC2C(self, **event_args):
     C2CRepeaterPanel= RepeatingPanel()
