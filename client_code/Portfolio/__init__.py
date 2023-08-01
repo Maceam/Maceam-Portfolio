@@ -17,7 +17,8 @@ class Portfolio(PortfolioTemplate):
     # Any code you write here will run before the form opens.
     self.FolioPanelMethod()
     self.ButtonExpander()
-  #Portfolio Panel constructor
+    
+  #Portfolio Panel constructorl
   def FolioPanelMethod(self, **event_args):
     WorkPanel= FlowPanel(align= "center")
     self.add_component(WorkPanel)
