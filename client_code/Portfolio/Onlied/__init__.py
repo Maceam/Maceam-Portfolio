@@ -34,3 +34,4 @@ class Onlied(OnliedTemplate):
     ProjectTextData= app_tables.showcase.get(Name= q.like('OnliedHero%'))
     ProjectText= RichText(content= ProjectTextData['Describe'], role= "FadedTxt", align= "left")
     self.add_component(ProjectText)
+    
