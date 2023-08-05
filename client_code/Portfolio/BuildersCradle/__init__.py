@@ -38,6 +38,6 @@ class BuildersCradle(BuildersCradleTemplate):
         C2CFlowPanel.add_component(img, width= 660)
 
   def TextC2C(self, **event_args):
-    ProjectTextData= app_tables.showcase.search(Name= q.like('C2CHero%'))
-    ProjectText= RichText(content= ProjectTextData)
+    ProjectTextData= app_tables.showcase.get(Name= q.like('C2CHero%'))
+    ProjectText= RichText(content= ProjectTextData['Describe'], role= "FadedTxt", align= "left")
     self.add_component(ProjectText)
