@@ -21,7 +21,7 @@ components:
     event_bindings: {click: header_main_click}
   - type: Link
     properties: {role: HeaderDefault, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: Portfolio, font_size: 20, wrap_on: mobile,
+      foreground: '', visible: true, text: Folio, font_size: 20, wrap_on: mobile,
       font: 'Source Code  Pro ', col_spacing: tiny, spacing_above: small, icon_align: left,
       col_widths: '', spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}
@@ -40,7 +40,7 @@ components:
     event_bindings: {click: header_about_click}
   - type: Link
     properties: {role: HeaderDefault, url: '', align: left, tooltip: '', border: '',
-      foreground: '', visible: true, text: Contact, font_size: 20, wrap_on: mobile,
+      foreground: '', visible: true, text: Email, font_size: 20, wrap_on: mobile,
       font: 'Source Code  Pro ', col_spacing: tiny, spacing_above: small, icon_align: left,
       col_widths: '', spacing_below: small, italic: false, background: '', bold: true,
       underline: false, icon: ''}

@@ -19,3 +19,7 @@ roles:
   components: [Button]
 - name: CallToAction
   components: [Button]
+- name: faded
+  components: [image, RichText]
+- name: FadedTxt
+  components: [RichTxt]
