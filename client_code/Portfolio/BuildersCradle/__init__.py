@@ -13,7 +13,6 @@ class BuildersCradle(BuildersCradleTemplate):
     self.RepeatC2C()
     
   def RepeatC2C(self, **event_args):
-    C2CRepeaterPanel= RepeatingPanel()
     C2CFlowPanel= FlowPanel()
     self.add_component(C2CFlowPanel)
     #table_row_total= len(app_tables.showcase.search()) #not nessesary just tells the total table size
@@ -21,4 +20,8 @@ class BuildersCradle(BuildersCradleTemplate):
     for Name in FolioWork:
       img = Image(display_mode= "fill_width", source= Name['PortImg'], vertical_align= "center", role= "faded")
       C2CFlowPanel.add_component(img)
+      
+
+    
+    
 
