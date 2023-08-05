@@ -175,12 +175,13 @@ z-index:12;
   font-family: "Source Code Pro";
   font-weight: "light";
   font-size: 16pt; 
-  text-align: left;
+  text-align: justify;
   width: 90%;
   position: relative;
   margin: auto;
   padding: 8px;
   color: #31e880;
+  text-indent: 12px;
   
 }
 .anvil-role-faded{
