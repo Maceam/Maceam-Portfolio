@@ -14,7 +14,7 @@ class About(AboutTemplate):
     # Set Form properties and Data Bindings.
     table_row= app_tables.personal_brand.get(name=q.like('logoglitchyy'))
     self.logoglitchy.source = table_row['portfolioImages']
-    
+    self.logoglitchy.tooltip = 'An animating pixel M logo.'
     self.AboutTxt.border = "8px"
     self.AboutTxt.font_size = 24
     

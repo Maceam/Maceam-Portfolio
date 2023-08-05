@@ -21,7 +21,7 @@ class Landing(LandingTemplate):
   def LandginMethod(self, **event_args): 
   # Any code you write here will run before the form opens.
     table_row= app_tables.showcase.get(Name=q.like('MelbourneFed'))
-    LandImg = Image(display_mode= "fill_width", source= table_row['PortImg'], vertical_align= "center", role= "LandingImg")
+    LandImg = Image(display_mode= "fill_width", source= table_row['PortImg'], vertical_align= "center", role= "LandingImg", tooltip= table_row['AltTxt'])
     HeroImg= Link()
     LandPanel = ColumnPanel()
     self.add_component(HeroImg)
