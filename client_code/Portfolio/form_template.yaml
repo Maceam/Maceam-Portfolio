@@ -2,5 +2,10 @@ container:
   type: HtmlTemplate
   properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
     role: null, html: '@theme:standard-page.html'}
-components: []
+components:
+- type: Spacer
+  properties: {visible: true, spacing_above: small, spacing_below: small, height: '1',
+    tooltip: ''}
+  name: topscroll
+  layout_properties: {slot: default}
 is_package: true

@@ -67,7 +67,7 @@ class Portfolio(PortfolioTemplate):
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(OnliedForm)
     get_open_form().content_panel.add_component(ReAdd)
-    
+    self.topscroll.scroll_into_view()    
   def ButtonHolder(self, **event_args):
     self.C2CButton()
     self.OnliedButton()
