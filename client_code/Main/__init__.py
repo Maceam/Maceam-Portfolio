@@ -20,70 +20,20 @@ class Main(MainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    #self.header_panel.role = "FlowPanelSticky"
+    self.header_panel.role = "FlowPanelSticky"
 
-    
+  '''Header events'''
   def header_main_click(self, **event_args):
-    """This method is called when the link is clicked"""
-   
-    """Clears the page and adds the requested panel"""
-    landing_panel = Landing()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(landing_panel)
-    
-    """changes which header shows as selected"""
-    self.header_about.role = "HeaderDefault"
-    self.header_contact.role = "HeaderDefault"
-    self.header_main.role = "HeaderSelected"
-    self.header_portfolio.role = "HeaderDefault"
-    
+    self.content_panel.open_form('Landing')
+
   def header_portfolio_click(self, **event_args):
-    """This method is called when the link is clicked"""
+    open_form('Portfolio')
 
-    """Clears the page and adds the requested panel"""
-    portfolio_panel = Portfolio()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(portfolio_panel)
-
-    """changes which header shows as selected"""
-    self.header_about.role = "HeaderDefault"
-    self.header_contact.role = "HeaderDefault"
-    self.header_main.role = "HeaderDefault"
-    self.header_portfolio.role = "HeaderSelected"
-    
   def header_about_click(self, **event_args):
     """This method is called when the link is clicked"""
-    """Clears the page and adds the requested panel"""
-    about_panel = About()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(about_panel)
+    open_form('About')
 
-    """changes which header shows as selected"""
-    self.header_about.role = "HeaderSelected"
-    self.header_contact.role = "HeaderDefault"
-    self.header_main.role = "HeaderDefault"
-    self.header_portfolio.role = "HeaderDefault"
-    
   def header_contact_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    """Clears the page and adds the requested panel"""
-    contact_panel = Contact()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(contact_panel)
+    open_form('Contact')
 
-    """changes which header shows as selected"""
-    self.header_about.role = "HeaderDefault"
-    self.header_contact.role = "HeaderSelected"
-    self.header_main.role = "HeaderDefault"
-    self.header_portfolio.role = "HeaderDefault"
-
-  def LandingImg_show(self, **event_args):
-    landing_panel = Landing()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(landing_panel)
-
-  def form_show(self, **event_args):
-    landing_panel = Landing()
-    get_open_form().content_panel.clear()
-    get_open_form().content_panel.add_component(landing_panel)
-
+    

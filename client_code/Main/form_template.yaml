@@ -19,6 +19,8 @@ components:
     name: header_main
     layout_properties: {grid_position: 'XYWRYY,UCWUSF', full_width_row: true}
     event_bindings: {click: header_main_click}
+    data_bindings:
+    - {property: tag, code: 'self.item['''']', writeback: false}
   - type: Link
     properties: {role: HeaderDefault, url: '', align: left, tooltip: '', border: '',
       foreground: '', visible: true, text: Folio, font_size: 20, wrap_on: mobile,
@@ -54,6 +56,11 @@ components:
     background: '#121218'}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: landing_1
+    properties: {}
+    type: form:Landing
+    layout_properties: {grid_position: 'UZEHLK,CXLLBZ'}
 - type: Spacer
   properties: {visible: true, spacing_above: small, spacing_below: none, height: 32,
     tooltip: ''}
