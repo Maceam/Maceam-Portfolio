@@ -15,7 +15,7 @@ services:
 - source: /runtime/services/anvil/files.yml
   client_config: {}
   server_config: {file_table: files}
-startup: {type: form, module: About}
+startup: {type: form, module: Main}
 package_name: Maceam_Portfolio
 allow_embedding: false
 name: Maceam Portfolio
