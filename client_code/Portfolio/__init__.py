@@ -55,6 +55,7 @@ class Portfolio(PortfolioTemplate):
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(HomeOdForm)
     get_open_form().content_panel.add_component(ReAdd)
+    
   def OnliedButton(self, **event_args):
     ButtonExp= Button(text= "Onlied: Awareness", align= "full", font_size= 22, spacing_above= "small", spacing_below= "small")
     ButtonExp.role= "ButtonPortfolio"
@@ -68,6 +69,7 @@ class Portfolio(PortfolioTemplate):
     get_open_form().content_panel.add_component(OnliedForm)
     get_open_form().content_panel.add_component(ReAdd)
     self.topscroll.scroll_into_view()    
+    
   def ButtonHolder(self, **event_args):
     self.C2CButton()
     self.OnliedButton()

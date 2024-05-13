@@ -23,7 +23,7 @@ class canvas_drawings(canvas_drawingsTemplate):
     """This method is called when the canvas is reset and cleared, such as when the window resizes, or the canvas is added to a form."""
     i = 1
     c = self.canvas_1
-    while i < 200: 
+    while i < 20: 
       print(i)
       time.sleep(.05)
       c.stroke_style = "#2196F3"
@@ -32,10 +32,9 @@ class canvas_drawings(canvas_drawingsTemplate):
     
       # Draw a filled rectangle
   
-    
       # Draw a rectangle outline 25 pixels right of it
       c.stroke_rect(125, 100, 50, 75)
-      c.stroke_rect(x, y, 50, 75)
+      c.stroke_rect(4, 200,50, 75)
       c.stroke()
       i += 1
   
