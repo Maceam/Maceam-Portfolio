@@ -1,4 +1,5 @@
 from ._anvil_designer import CanvasTemplate
+from ._anvil_designer import Main
 from anvil import *
 import anvil.server
 import anvil.tables as tables
@@ -11,15 +12,11 @@ class Canvas(CanvasTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
-    self.test_canvas
-    
-  def test_canvas(self, **event_args):
-    t = Canvas()
-    get_open_form().content_panel.add_component(t)
-    
+    self.math_canvas()
+
   def math_canvas(self, **event_args):
-    c = self.test_canvas
-  
+    c = self
+    get_open_form().content_panel.add_component(c)
     # Set the stroke and fill styles
     c.stroke_style = "#2196F3"
     c.line_width = 3
@@ -33,3 +30,6 @@ class Canvas(CanvasTemplate):
   
     # Remove colour from a smaller rectangle
     c.clear_rect(120, 125, 20, 30)
+
+  def math_canvas_show(self, **event_args):
+    self.visible = True
