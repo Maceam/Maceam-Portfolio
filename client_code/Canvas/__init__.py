@@ -1,5 +1,4 @@
 from ._anvil_designer import CanvasTemplate
-from ._anvil_designer import Main
 from anvil import *
 import anvil.server
 import anvil.tables as tables
@@ -15,8 +14,7 @@ class Canvas(CanvasTemplate):
     self.math_canvas()
 
   def math_canvas(self, **event_args):
-    c = self
-    get_open_form().content_panel.add_component(c)
+    c=self
     # Set the stroke and fill styles
     c.stroke_style = "#2196F3"
     c.line_width = 3
