@@ -49,11 +49,13 @@ components:
     event_bindings: {click: header_contact_click}
     data_bindings: []
   - name: link_1
-    properties: {role: HeaderDefault}
+    properties: {role: HeaderDefault, text: LinkedIn, font: 'Source Code  Pro ', font_size: 20,
+      bold: true, url: 'https://www.linkedin.com/in/maceam/'}
     type: Link
     layout_properties: {}
   - name: link_2
-    properties: {role: HeaderDefault}
+    properties: {role: HeaderDefault, font: 'Source Code  Pro ', font_size: 20, bold: true,
+      text: GitHub, url: 'https://github.com/Maceam'}
     type: Link
     layout_properties: {}
 - type: ColumnPanel
