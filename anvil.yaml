@@ -50,7 +50,7 @@ db_schema:
     server: full
     columns:
     - name: Name
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {order: 0, width: 259}
       type: string
     - name: Subject
       admin_ui: {order: 2, width: 200}

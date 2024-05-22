@@ -48,6 +48,16 @@ components:
     layout_properties: {grid_position: 'XYWRYY,BPMISS', full_width_row: true}
     event_bindings: {click: header_contact_click}
     data_bindings: []
+  - name: link_1
+    properties: {role: HeaderDefault, text: LinkedIn, font: 'Source Code  Pro ', font_size: 20,
+      bold: true, url: 'https://www.linkedin.com/in/maceam/'}
+    type: Link
+    layout_properties: {}
+  - name: link_2
+    properties: {role: HeaderDefault, font: 'Source Code  Pro ', font_size: 20, bold: true,
+      text: GitHub, url: 'https://github.com/Maceam'}
+    type: Link
+    layout_properties: {}
 - type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
     wrap_on: mobile, col_spacing: small, spacing_above: small, col_widths: '', spacing_below: none,

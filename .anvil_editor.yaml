@@ -6,7 +6,6 @@ unique_ids:
     Portfolio: '1689639090663125970030955.99324'
     About: '1689659485602197833666681.64047'
     Portfolio.BuildersCradle: '1690518410268594291459877.153'
-    canvas_drawings: '1690429930357597525284976.9375'
     Portfolio.HomeOdyssey: '1690601425581981965255767.459'
     Portfolio.D0tmatrix: '1690518426717260663605577.15173'
     Portfolio.Onlied: '1690601382184354128987608.6584'
@@ -19,3 +18,4 @@ unique_ids:
     maceam_logo_mark_green_rgb.png: '1690096246001984022260524.0205'
     standard-page.html: VBDZDKFW255M7YCU3BUEINM3P6GSL72V
     theme.css: 7DVM7X3L3WRIOIX2Y4DVS54KDB3EPSI3
+  scripts: {}

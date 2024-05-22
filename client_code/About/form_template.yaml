@@ -21,13 +21,11 @@ components:
   properties: {role: AboutTxt, align: left, tooltip: '', enable_slots: true, border: '',
     foreground: '#31e880', visible: true, font_size: null, content: "Hello! It is\
       \ great to see you here. I am a Maysam, a professional Communications Designer\
-      \ as well as  a Data Analyst in training. My interest is in building solutions\
-      \ through a data driven, experimental and collaborative approach to the problem\
-      \ at hand. I believe in creating things that break expectations - things which\
-      \ diverge from the norm, being able to continuously practise, iterate, learn,\
-      \ glitch and experiment are the essence of life. \n\nIf I'm not working on personal\
-      \ projects you can often find me doing photography, reading, brewing coffee\
-      \ or playing the odd video game to unwind.\n\nI am always open to collaboration\
+      \ and Data Analyst.\n\n\nMy interest is in building solutions through a data\
+      \ driven, experimental and collaborative approach to the problem at hand. I\
+      \ believe in creating things that break expectations - things which diverge\
+      \ from the norm, being able to continuously practise, iterate, learn, glitch\
+      \ and experiment are the essence of life. \n\n\n\nI am always open to collaboration\
       \ and communication so please feel free to send me an email or contact me directly\
       \ through the website. I look forward to hearing from you. ", font: '', spacing_above: medium,
     spacing_below: medium, data: null, background: '', format: markdown}
