@@ -7,27 +7,14 @@ from anvil.tables import app_tables
 from ..Portfolio import Portfolio
 from ..About import About
 from ..Contact import Contact
-
+import time
 class Landing(LandingTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
     # Set Form properties and Data Bindings.
-    self.LandginMethod()
     self.ClickMeMethod()
+    self.CanvasLoader()
 
-
-  #make a def (aka method) for adding the panel  
-  
-  def LandginMethod(self, **event_args): 
-  # Any code you write here will run before the form opens.
-    table_row= app_tables.showcase.get(Name=q.like('MelbourneFed'))
-    LandImg = Image(display_mode= "fill_width", source= table_row['PortImg'], vertical_align= "center", role= "LandingImg", tooltip= table_row['AltTxt'])
-    HeroImg= Link()
-    LandPanel = ColumnPanel()
-    self.add_component(HeroImg)
-    HeroImg.add_component(LandPanel)
-    LandPanel.add_component(LandImg, full_width_row=True)
-    HeroImg.add_event_handler('click', self.ClickMeMethod_click)
     
   def ClickMeMethod(self, **event_args): 
     ButtonMoving = Button(role= "CallToAction", text= "Come Explore", font= "D0tmatrix", font_size= 24)
@@ -38,3 +25,27 @@ class Landing(LandingTemplate):
     portfolio_panel = Portfolio()
     get_open_form().content_panel.clear()
     get_open_form().content_panel.add_component(portfolio_panel)
+
+  def CanvasLoader(self, **event_args): 
+    self.canvas_data.visible = True
+    self.canvas_design.visible = True
+    self.canvas_data_show()
+    self.canvas_design_show()
+
+  def canvas_data_show(self, **event_args):
+    c = self.canvas_data
+    c.visible = True
+
+    # Draw an image at position (100,100)
+    n = 1
+    while n < 100:
+      c.fill_style = "rgba(n,111,222,22)"
+      c.fill_rect(n, 22, n, 222)
+      n= n + 1 
+      time.sleep(5)
+
+  def canvas_design_show(self, **event_args):
+    """This method is called when the Canvas is shown on the screen"""
+    pass
+ 
+
