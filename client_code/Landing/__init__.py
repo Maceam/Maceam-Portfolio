@@ -8,6 +8,7 @@ from ..Portfolio import Portfolio
 from ..About import About
 from ..Contact import Contact
 import time
+import pyautogui
 class Landing(LandingTemplate):
   def __init__(self, **properties):
     self.init_components(**properties)
@@ -36,16 +37,25 @@ class Landing(LandingTemplate):
     c = self.canvas_data
     c.visible = True
 
-    # Draw an image at position (100,100)
-    n = 1
-    while n < 100:
-      c.fill_style = "rgba(n,111,222,22)"
-      c.fill_rect(n, 22, n, 222)
-      n= n + 1 
-      time.sleep(5)
-
   def canvas_design_show(self, **event_args):
     """This method is called when the Canvas is shown on the screen"""
     pass
+
+  def canvas_data_mouse_enter(self, x, y, **event_args):
+    n = 1
+    while n = < 100
+      c = self.canvas_data
+      c.stroke_style = "#2196F3"
+      c.line_width = 3
+      c.fill_style = "#E0E0E0"
+    
+      # Draw a filled rectangle  
+      c.fill_rect(mouseX, 100, 50, 75)
+    
+      # Draw a rectangle outline 25 pixels right of it
+      c.stroke_rect(125, 100, 50, 75)
+    
+      # Remove colour from a smaller rectangle
+      c.clear_rect(120, 125, 20, 30)
  
 

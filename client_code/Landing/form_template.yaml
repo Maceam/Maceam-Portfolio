@@ -12,7 +12,7 @@ components:
     properties: {height: '3000', background: '#ff8040', visible: false}
     type: Canvas
     layout_properties: {grid_position: 'HXFSOY,KGJTVY', full_width_row: true}
-    event_bindings: {show: canvas_data_show}
+    event_bindings: {show: canvas_data_show, mouse_enter: canvas_data_mouse_enter}
     data_bindings: []
   - name: canvas_design
     properties: {height: '3000', background: '#00ffff', visible: false}
