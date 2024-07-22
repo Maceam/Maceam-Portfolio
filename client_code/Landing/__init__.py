@@ -17,6 +17,7 @@ class Landing(LandingTemplate):
     # Set Form properties and Data Bindings.
     self.ClickMeMethod()
     self.CanvasLoader()
+  
     
   def ClickMeMethod(self, **event_args): 
     ButtonMoving = Button(role= "CallToAction", text= "Come Explore", font= "D0tmatrix", font_size= 24)
@@ -31,20 +32,11 @@ class Landing(LandingTemplate):
   def CanvasLoader(self, **event_args): 
     self.canvas_data.visible = True
     self.canvas_design.visible = True
-    self.canvas_data_show()
-    self.canvas_design_show()
-
-  def canvas_data_show(self, **event_args):
-    show_data = self.canvas_data
-    show_data.visible = True
-
-  def canvas_design_show(self, **event_args):
-    show_design = self.canvas_design
-    show_design.visible = True
-      
+    
   def canvas_data_mouse_enter(self, x, y, **event_args):
-    n = 0
-    while n < 10000:
+    # animation loop for data section
+    animation_count = 0
+    while animation_count < 1000:
       now = datetime.datetime.now()
       timestamp = int(now.timestamp())
       rand = random.randrange(1,100,1)
@@ -53,13 +45,17 @@ class Landing(LandingTemplate):
       c.fill_style = "#2116F3"
       
       # Draw a filled rectangle  
-      c.fill_rect(n+1, rand, 10, 10)
+      c.fill_rect(animation_count + 1, rand, 10, 10)
       
       c.fill_style = "#0016FF"
-      c.fill_rect(n+1, rand, 10, 10)
-      n =  n + 1
+      c.fill_rect(animation_count +1, rand, 10, 10)
+      animation_count  =  animation_count  + 1
 
       c.fill_style = "#00FFFF"
-      c.fill_rect(n, rand, 10, timestamp)
-      n =  n + 1
+      c.fill_rect(animation_count, rand, 10, timestamp)
+      animation_count =  animation_count + 1
       time.sleep(.001)
+
+      c.clear_rect(animation_count, rand, 10, timestamp)
+
+  
