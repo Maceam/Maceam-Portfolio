@@ -58,4 +58,8 @@ class Landing(LandingTemplate):
       c.fill_style = "#0016FF"
       c.fill_rect(n+1, rand, 10, 10)
       n =  n + 1
+
+      c.fill_style = "#00FFFF"
+      c.fill_rect(n, rand, 10, timestamp)
+      n =  n + 1
       time.sleep(.001)
