@@ -20,11 +20,12 @@ package_name: Maceam_Portfolio
 allow_embedding: false
 name: Maceam Portfolio
 runtime_options:
-  version: 2
+  version: 3
   client_version: '3'
   server_version: python3-full
   server_spec: {base: python310-standard}
   server_spec_disabled: {requirements: '', base: python310-minimal}
+  legacy_features: {class_names: true, bootstrap3: true, __dict__: true, root_container: true}
 metadata: {logo_img: 'asset:Asset 22img.png', title: Maceam Portfolio, description: This is Maceam's portfolio page. It is a showcase made from a fusion of both communications design and data analysis works.}
 startup_form: null
 native_deps:
