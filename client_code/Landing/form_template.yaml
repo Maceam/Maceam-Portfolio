@@ -8,15 +8,20 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
-  - name: canvas_data
-    properties: {height: '3000', background: '#ff8040', visible: false}
-    type: Canvas
-    layout_properties: {grid_position: 'HXFSOY,KGJTVY', full_width_row: true}
-    event_bindings: {show: canvas_data_show, mouse_enter: canvas_data_mouse_enter}
-    data_bindings: []
-  - name: canvas_design
-    properties: {height: '3000', background: '#00ffff', visible: false}
-    type: Canvas
-    layout_properties: {grid_position: 'HXFSOY,EXTDIJ', full_width_row: true}
-    event_bindings: {show: canvas_design_show}
+  - name: linear_panel_1
+    properties: {}
+    type: LinearPanel
+    layout_properties: {grid_position: 'VCZQJS,VDHSVB'}
+    components:
+    - name: canvas_design
+      properties: {height: '128', background: '', visible: false}
+      type: Canvas
+      layout_properties: {}
+      event_bindings: {show: canvas_design_show, mouse_enter: canvas_design_mouse_enter}
+    - name: canvas_data
+      properties: {height: '128', background: '', visible: false}
+      type: Canvas
+      layout_properties: {}
+      event_bindings: {show: canvas_data_show, mouse_enter: canvas_data_mouse_enter, mouse_move: canvas_data_mouse_move}
+      data_bindings: []
 custom_component: true

@@ -142,11 +142,24 @@ z-index:12;
   top: 35px;
   left: 0px;
   padding: 0px;
-  align-items: left;
+  align-items: center;
   justify-content: left;
   position: absolute; 
+
+
 }
 
+.anvil-role-CallToActionRight{
+  opacity: 90%;
+  top: 163px;
+  right: 0px;
+  padding: 0px;
+  align-items: right;
+  justify-content: right;
+  position: absolute; 
+
+
+}
 .modal-body.alert-text{
   font-family: "Source Code Pro";
   font-weight: "light";
