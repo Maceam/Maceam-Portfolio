@@ -27,12 +27,11 @@ runtime_options:
   server_spec_disabled: {requirements: '', base: python310-minimal}
 metadata: {logo_img: 'asset:Asset 22img.png', title: Maceam Portfolio, description: This is Maceam's portfolio page. It is a showcase made from a fusion of both communications design and data analysis works.}
 startup_form: null
-native_deps: {head_html: '<link rel="preconnect" href="https://fonts.googleapis.com">
-
+native_deps:
+  head_html: |-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap"
-    rel="stylesheet">'}
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap" rel="stylesheet">
 db_schema:
   personal_brand:
     client: search
@@ -77,7 +76,7 @@ db_schema:
       admin_ui: {order: 1, width: 200}
       type: string
     - name: AltTxt
-      admin_ui: {order: 2, width: 200}
+      admin_ui: {order: 2, width: 678.53}
       type: string
     - name: Describe
       admin_ui: {order: 3, width: 200}
